@@ -10,6 +10,7 @@
       <label for="exampleFormControlTextarea1" class="form-label">Message</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
+    <div id="liveAlertPlaceholder"></div>
     <button type="button" class="btn btn-success d-grid gap-2 col-2 mx-auto" (click)="(Submit())">Submit</button>
     <input type="hidden" [value]="contact.date | date: 'medium'" >
   </form>

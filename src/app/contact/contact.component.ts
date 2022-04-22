@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   }
 
   Submit() {
-    
+    alert("test");
     console.log(JSON.stringify(this.contact));
   }
 }
