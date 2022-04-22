@@ -1,17 +1,18 @@
 <div class="container rounded border p-5">
+  <form action="">
     <div class="mb-3">
-        <h4>Feel free to contact me.</h4>
-        <br>
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="button" class="btn btn-success d-grid gap-2 col-2 mx-auto">Submit</button>
+      <h4>Feel free to contact me.</h4>
+      <br>
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" placeholder="name@example.com" [(ngModel)]="contact.email" name="email">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-success d-grid gap-2 col-2 mx-auto" (click)="(Submit())">Submit</button>
+    <input type="hidden" [value]="contact.date | date: 'medium'" >
+  </form>
 </div>
-
 <div class="container border rounded p-3 mt-3">
-
 </div>
