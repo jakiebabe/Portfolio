@@ -17,9 +17,11 @@
                 <a class="nav-link" [routerLink]="['/profile/samples']">Sample Outputs</a>
             </li>
         </ul>
+        <div class="container">
+            <router-outlet name="profile"></router-outlet>
+        </div>
     </div>
     <div class="col-2 container align-left">
-        <router-outlet></router-outlet>
         <body>
             <h1>test</h1>
             <h1>test</h1>
