@@ -1,36 +1,76 @@
 <div class="container-fluid">
     <h2>{{title}}</h2>
 </div>
-<div class="container p-3 row ">
-    <div class="container">
-        <div class="container-fluid">
-            <img src="../../assets/image5.jpg" width="300px" height="auto" class="rounded p-3" alt="...">
-            <h4>Rebullo, Jake V.</h4>
-            <p>BS Information Technology</p>
+<div class="container-fluid p-3 row">
+    <div class="container col">
+        <img src="../../assets/image5.jpg" width="200px" height="auto" class="rounded" alt="...">
+        <br>
+        <br>
+        <h4>Rebullo, Jake V.</h4>
+        <p>BS Information Technology</p>
+    </div>
+    <div class="container col">
+        <div class="container p-3">
+            <i class="bi bi-facebook"></i>
+            <a href="https://bit.ly/jakerebullo" class="link-info" target="_blank">Facebook</a>
+            <br>
+            <a href="https://bit.ly/3MKU3mz" class="link-info" target="_blank">Twitter</a>
+            <br>
+            <a href="https://bit.ly/jake-rebullo" class="link-info" target="_blank">LinkedIn</a>
+            <a href="https://bit.ly/3MKU3mz" class="link-info" target="_blank">Twitter</a>
+            <br>
+            <a href="https://bit.ly/3LgcLSm" class="link-info" target="_blank">Github</a>
         </div>
     </div>
 </div>
-<div class="container p-3 row border rounded">
-    <div class="col-2 p-3 rounded">
-        <ul class="nav nav-pills nav-fill flex-column p-3">
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/profile/overview']">Overview</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/profile/work-education']">Work and Education</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/profile/hobbies']">Hobbies</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/profile/skills']">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['/profile/samples']">Sample Outputs</a>
-            </li>
-        </ul>
-    </div>
-    <div class="container-fluid col border rounded" id="route1">
-        <router-outlet></router-outlet>
-    </div>
+<div class="container p-3 col row ">
+    <!-- <div class="container">
+        <div class="col-2 p-3 border-start">
+            <ul class="nav nav-pills nav-fill flex-column p-3">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/profile/overview']">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/profile/work-education']">Work and Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/profile/hobbies']">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/profile/skills']">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/profile/samples']">Sample Outputs</a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+        <li ngbNavItem>
+          <a ngbNavLink [routerLink]="['/profile/overview']">Overview</a>
+          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink [routerLink]="['/profile/work-education']">Work and Education</a>
+          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink [routerLink]="['/profile/hobbies']">Hobbies</a>
+          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink [routerLink]="['/profile/skills']">Skills</a>
+          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink [routerLink]="['/profile/samples']">Sample Outputs</a>
+          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav"></div>
+    <!-- <div class="container">
+        <div class="container-fluid col border-start rounded">
+            <router-outlet></router-outlet>
+        </div>
+    </div> -->
 </div>

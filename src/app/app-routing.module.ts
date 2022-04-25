@@ -1,8 +1,11 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { MessageListComponent } from './admin/message-list/message-list.component';
 import { AppComponent } from './app.component';
+import { AuthGuard } from './auth.guard';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 import { HobbiesComponent } from './profile/hobbies/hobbies.component';
 import { OverviewComponent } from './profile/overview/overview.component';
 import { ProfileComponent } from './profile/profile.component'
@@ -39,6 +42,14 @@ const routes: Routes = [
   }, {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'message-list',
+    component: MessageListComponent,
+    canActivate: [AuthGuard]
+  }, {
+    path: 'home',
+    component: HomeComponent
   }
 ]
 

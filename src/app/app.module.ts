@@ -14,6 +14,7 @@ import { SkillsComponent } from './profile/skills/skills.component';
 import { SamplesComponent } from './profile/samples/samples.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MessageListComponent } from './admin/message-list/message-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { MessageListComponent } from './admin/message-list/message-list.componen
     SkillsComponent,
     SamplesComponent,
     MessageListComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
