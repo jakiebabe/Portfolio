@@ -12,6 +12,7 @@ import { WorkEducationComponent } from './profile/work-education/work-education.
 import { HobbiesComponent } from './profile/hobbies/hobbies.component';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { SamplesComponent } from './profile/samples/samples.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SamplesComponent } from './profile/samples/samples.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

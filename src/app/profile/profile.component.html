@@ -1,7 +1,10 @@
+<div class="container-fluid">
+    <h2>{{title}}</h2>
+</div>
 <div class="container p-3 row ">
     <div class="container">
-        <img src="../../assets/" width="300px" height="auto" class="rounded" alt="...">
-        <div class="container-sm">
+        <div class="container-fluid">
+            <img src="../../assets/image5.jpg" width="300px" height="auto" class="rounded p-3" alt="...">
             <h4>Rebullo, Jake V.</h4>
             <p>BS Information Technology</p>
         </div>
@@ -11,7 +14,7 @@
     <div class="col-2 p-3 rounded">
         <ul class="nav nav-pills nav-fill flex-column p-3">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" [routerLink]="['/profile/overview']">Overview</a>
+                <a class="nav-link" [routerLink]="['/profile/overview']">Overview</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/profile/work-education']">Work and Education</a>
@@ -27,7 +30,7 @@
             </li>
         </ul>
     </div>
-</div>
-<div class="container">
-        <router-outlet name="profile" ></router-outlet>
+    <div class="container-fluid col border rounded" id="route1">
+        <router-outlet></router-outlet>
+    </div>
 </div>

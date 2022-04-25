@@ -1,0 +1,19 @@
+{
+    "contacts": [
+        {
+            "email": "testmail@mail.com",
+            "text": "test1",
+            "date": ""
+          },
+          {
+            "email": "testmail1@mail.com",
+            "text": "test2",
+            "date": ""
+          },
+          {
+            "email": "testmail2@mail.com",
+            "text": "test3",
+            "date": ""
+          }
+    ]
+}

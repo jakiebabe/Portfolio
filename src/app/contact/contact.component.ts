@@ -8,7 +8,28 @@ import { Contact } from '../models';
 })
 export class ContactComponent implements OnInit {
 
+  title = 'Contact';
   contact: Contact = new Contact();
+
+  Contact: Contact[] = [
+    {
+      email: 'testmail@mail.com',
+      text: 'test1',
+      date: new Date()
+    },
+    {
+      email: 'testmail1@mail.com',
+      text: 'test2',
+      date: new Date()
+    },
+    {
+      email: 'testmail2@mail.com',
+      text: 'test3',
+      date: new Date()
+    },
+
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -17,5 +38,9 @@ export class ContactComponent implements OnInit {
   Submit() {
     alert("test");
     console.log(JSON.stringify(this.contact));
+
+  }
+  add(models: Contact) {
+    this.Contact.push(models);
   }
 }

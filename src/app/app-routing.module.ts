@@ -10,32 +10,36 @@ import { SamplesComponent } from './profile/samples/samples.component';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { WorkEducationComponent } from './profile/work-education/work-education.component';
 
-const routes: Routes = [{
-  path: 'profile',
-  component: ProfileComponent
-},
- {
-   path: 'contact',
-   component: ContactComponent
- }, {
-   path: 'about',
-   component: AboutComponent
- }, {
-   path: 'profile/overview',
-   component : OverviewComponent
- }, {
-  path: 'profile/work-education',
-  component : WorkEducationComponent
-}, {
-  path: 'profile/hobbies',
-  component : HobbiesComponent
-}, {
-  path: 'profile/skills',
-  component : SkillsComponent
-}, {
-  path: 'profile/samples',
-  component : SamplesComponent
-}
+const routes: Routes = [
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    children: [
+      {
+        path: 'overview',
+        component: OverviewComponent    
+      }, {
+        path: 'work-education',
+        component: WorkEducationComponent
+      }, {
+        path: 'hobbies',
+        component: HobbiesComponent
+      }, {
+        path: 'skills',
+        component: SkillsComponent
+      }, {
+        path: 'samples',
+        component: SamplesComponent
+      }
+    ]
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
+  }, {
+    path: 'about',
+    component: AboutComponent
+  }
 ]
 
 @NgModule({

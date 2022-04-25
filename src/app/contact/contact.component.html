@@ -1,3 +1,6 @@
+<div class="container-fluid">
+  <h2>{{title}}</h2>
+</div>
 <div class="container rounded border p-5">
   <form action="">
     <div class="mb-3">
@@ -16,4 +19,21 @@
   </form>
 </div>
 <div class="container border rounded p-3 mt-3">
+  <div class=" container mb-3">
+    <h4>Inbox</h4>
+    <table class="table">
+      <thead>
+        <th>Email</th>
+        <th>Date</th>
+        <th>Message</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contacts of Contact">
+          <td>Contact.email</td>
+          <td>contacts.date</td>
+          <td>contacts.Text</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
