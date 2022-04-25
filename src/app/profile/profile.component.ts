@@ -11,5 +11,12 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  isShown: Boolean = false;
+
+  page() {
+    
+    this.isShown = ! this.isShown;
+  }
 
 }

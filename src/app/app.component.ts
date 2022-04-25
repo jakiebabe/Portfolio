@@ -11,4 +11,5 @@ import { DatePipe } from '@angular/common';
 export class AppComponent {
   date: Date = new Date();
   title = 'Portfolio';
+  name = 'Jake';
 }
