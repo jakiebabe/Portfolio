@@ -13,6 +13,7 @@ import { HobbiesComponent } from './profile/hobbies/hobbies.component';
 import { SkillsComponent } from './profile/skills/skills.component';
 import { SamplesComponent } from './profile/samples/samples.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MessageListComponent } from './admin/message-list/message-list.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     WorkEducationComponent,
     HobbiesComponent,
     SkillsComponent,
-    SamplesComponent
+    SamplesComponent,
+    MessageListComponent,
   ],
   imports: [
     BrowserModule,

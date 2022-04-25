@@ -1,0 +1,19 @@
+<div class="container border rounded p-3 mt-3">
+    <div class=" container mb-3">
+      <h4>Inbox</h4>
+      <table class="table">
+        <thead>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Message</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let contacts of contact">
+            <td>{{contacts.email}}</td>
+            <td>{{contacts.date | date:'longDate'}}</td>
+            <td>{{contacts.text}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
