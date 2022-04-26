@@ -15,6 +15,7 @@ import { SamplesComponent } from './profile/samples/samples.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MessageListComponent } from './admin/message-list/message-list.component';
 import { HomeComponent } from './home/home.component';
+import { SettingsComponent } from './admin/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeComponent } from './home/home.component';
     SamplesComponent,
     MessageListComponent,
     HomeComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

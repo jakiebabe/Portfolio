@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { MessageListComponent } from './admin/message-list/message-list.component';
+import { SettingsComponent } from './admin/settings/settings.component';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './auth.guard';
 import { ContactComponent } from './contact/contact.component';
@@ -50,6 +51,11 @@ const routes: Routes = [
   }, {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent,
+    // canActivate: [AuthGuard]
   }
 ]
 

@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <h2>{{title}}</h2>
 </div>
-<div class="container rounded border p-5">
+<div class="container rounded border p-5 linear-gradient">
   <form action="">
     <div class="mb-3">
       <h4>Feel free to contact me.</h4>
@@ -14,12 +14,15 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="contact.text" name="text"></textarea>
     </div>
     <p *ngFor="let alert of alerts">
-      <ngb-alert [dismissible]="false" [type]="alert.type" (click)="Submit()">{{ alert.message }}</ngb-alert>
+      <ngb-alert [dismissible]="false" [type]="alert.type">{{ alert.message }}</ngb-alert>
     </p>
-    <button type="button" class="btn btn-success d-grid gap-2 col-2 mx-auto" (click)="(Submit())">Submit</button>
+    <button type="button" class="btn btn-success d-grid gap-2 mx-auto" (click)="(Submit())">Submit</button>
     <input type="hidden" [value]="contact.date | date: 'medium'">
   </form>
 </div>
+<div class="container">
+  
+</div>
 <div>
-  <app-message-list></app-message-list>
+  <!-- <app-message-list></app-message-list> -->
 </div> 
