@@ -8,31 +8,30 @@
                 <label for="staticEmail" class="col-sm-2 col-form-label">Full Name</label>
                 <div class="col-sm-10">
                     <input type="text" [readonly]="readOnly" class="form-control-plaintext" id="fullName"
-                        name="fullName" [(ngModel)]="overview.fullName">
+                        name="fullName" [(ngModel)]="Overview.fullName">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
                     <input type="text" [readonly]="readOnly" class="form-control-plaintext" id="email" name="email"
-                        [(ngModel)]="overview.email">
+                        [(ngModel)]="Overview.email">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="staticEmail" class="col-sm-2 col-form-label">Location</label>
                 <div class="col-sm-10">
                     <input type="text" [readonly]="readOnly" class="form-control-plaintext" id="location"
-                        name="location" [(ngModel)]="overview.location">
+                        name="location" [(ngModel)]="Overview.location">
                 </div>
             </div>
             <div class="mb-3 row">
                 <label for="staticEmail" class="col-sm-2 col-form-label">Birthday</label>
                 <div class="col-sm-10">
                     <input type="text" [readonly]="readOnly" class="form-control-plaintext" id="birthDay" name="birthday"
-                        [value]="overview.birthDate |  date: 'longDate'">
+                        [value]="Overview.birthDate |  date: 'longDate'">
                 </div>
             </div>
-            <!-- <button type="button" class="btn btn-dark rounded col" (click)="edit()">{{editStatus}}</button> -->
         </form>
     </div>
 </div>

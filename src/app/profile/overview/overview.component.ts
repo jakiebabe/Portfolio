@@ -1,6 +1,4 @@
-import { dashCaseToCamelCase } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
-import { NgModel } from '@angular/forms';
 import { Overview } from 'src/app/models';
 
 @Component({
@@ -12,7 +10,16 @@ export class OverviewComponent implements OnInit {
   title = 'Overview';
   overview: Overview = new Overview();
 
+  Overview = {
+    fullName: 'Rebullo, Jake Villamin',
+    email: 'jakerebullo@gmail.com',
+    location: 'Philippines',
+    birthDate: new Date ('01/26/2001')
+  }
+
   constructor() { }
+
+
   
   ngOnInit(): void {
     

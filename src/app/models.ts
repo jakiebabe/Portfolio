@@ -2,7 +2,7 @@ export class Profile {
     fName: string = '';
     lName: string = '';
     bDay: Date = new Date();
-    
+
 }
 
 export class Contact {
@@ -11,8 +11,24 @@ export class Contact {
     date: Date = new Date();
 }
 export class Overview {
-    fullName: string = 'Rebullo, Jake Villamin';
-    email: string = 'jakerebullo@gmail.com';
-    location: string = 'Philippines';
-    birthDate: Date = new Date("01/26/2001");
+    fullName: string = '';
+    email: string = '';
+    location: string = '';
+    birthDate: Date = new Date();
+}
+export class WorkEducation {
+    primary: string = '';
+    primaryLocation: string = '';
+    secondary: string = '';
+    secondaryLocation: string = '';
+    seniorSecondary: string = '';
+    seniorSecondaryLocation: string = '';
+    tertiary: string = '';
+    tertiaryLocation: string = '';
+    internship: string = '';
+    internshipLocation: string = '';
+    experience: string = '';
+    current: string = '';
+    currentLocation: string = '';
+
 }
