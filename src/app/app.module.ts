@@ -16,6 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MessageListComponent } from './admin/message-list/message-list.component';
 import { HomeComponent } from './home/home.component';
 import { SettingsComponent } from './admin/settings/settings.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SettingsComponent } from './admin/settings/settings.component';
     MessageListComponent,
     HomeComponent,
     SettingsComponent,
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,

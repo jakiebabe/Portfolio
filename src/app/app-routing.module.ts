@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './auth.guard';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HobbiesComponent } from './profile/hobbies/hobbies.component';
 import { OverviewComponent } from './profile/overview/overview.component';
 import { ProfileComponent } from './profile/profile.component'
@@ -54,9 +55,11 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    component: SettingsComponent,
+    component: SettingsComponent
     // canActivate: [AuthGuard]
-  }
+  },
+  { path: '**', pathMatch: 'full', 
+        component: PagenotfoundComponent },
 ]
 
 @NgModule({
