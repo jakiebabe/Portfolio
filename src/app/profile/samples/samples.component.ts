@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SamplesComponent implements OnInit {
 
+  title: string = 'Sample Outputs';
   constructor() { }
 
   ngOnInit(): void {
