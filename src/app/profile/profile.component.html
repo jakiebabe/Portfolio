@@ -1,37 +1,47 @@
-<div class="container-fluid">
-    <h2>{{title}}</h2>
+<div class="container-fluid p-3">
+  <h2>{{title}}</h2>
 </div>
-<div class="container-fluid p-3 row">
-    <div class="container col">
-        <img src="../../assets/Images/image5.jpg" width="200px" height="auto" class="rounded-circle" alt="...">
-        <br>
-        <br>
-        <h4>Jake Rebullo</h4>
-        <p>BS Information Technology</p>
+<div class="container-fluid row border-top p-3">
+  <div class="container col p-5">
+    <img src="../../assets/Images/image5.jpg" width="200px" class="rounded-circle float-start p-3" alt="...">
+    <div class="container col p-5">
+      <h4>Jake Rebullo</h4>
+      <p>BS Information Technology</p>
     </div>
+  </div>
 </div>
-<div class="container p-3 col row ">
-    <ul ngbNav #nav="ngbNav" class="nav-tabs">
-        <li ngbNavItem>
-          <a ngbNavLink [routerLink]="['/profile/overview']">Overview</a>
-          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink [routerLink]="['/profile/work-education']">Work and Education</a>
-          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink [routerLink]="['/profile/hobbies']">Hobbies</a>
-          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink [routerLink]="['/profile/skills']">Skills</a>
-          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
-        </li>
-        <li ngbNavItem>
-          <a ngbNavLink [routerLink]="['/profile/samples']">Sample Outputs</a>
-          <ng-template ngbNavContent><router-outlet></router-outlet></ng-template>
-        </li>
-      </ul>
-      <div [ngbNavOutlet]="nav"></div>
+<div class="container p-3 row ">
+  <ul ngbNav #nav="ngbNav" class="nav-tabs rounded">
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/profile/overview']">Overview</a>
+      <ng-template ngbNavContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/profile/work-education']">Work and Education</a>
+      <ng-template ngbNavContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/profile/hobbies']">Hobbies</a>
+      <ng-template ngbNavContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/profile/skills']">Skills</a>
+      <ng-template ngbNavContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/profile/samples']">Sample Outputs</a>
+      <ng-template ngbNavContent>
+        <router-outlet></router-outlet>
+      </ng-template>
+    </li>
+  </ul>
+  <div class="container col" [ngbNavOutlet]="nav"></div>
 </div>
