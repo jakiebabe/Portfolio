@@ -25,4 +25,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. -->
+<<<<<<< HEAD
 must be redirected to /src/index.html instead of readme.md. Why github :<
+=======
+must be redirected to /src/index.html instead of readme.md. Why github :<
+>>>>>>> e7145c78d5dba2ec6996435c2b083ec066bcb1c4
