@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MessageListComponent } from '../admin/message-list/message-list.component';
+import { AuthGuard } from '../auth.guard';
 import { Contact } from '../models';
 
 interface Alert {
@@ -25,7 +26,7 @@ export class ContactComponent implements OnInit {
   contact: Contact = new Contact();
 
 
-  constructor() { }
+  constructor(private authGuard: AuthGuard) { }
 
   ngOnInit(): void {
   }
@@ -35,5 +36,4 @@ export class ContactComponent implements OnInit {
     this.messageListComponent?.add(this.contact);
     console.log(JSON.stringify(this.contact));
   }
-
 }

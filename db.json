@@ -1,5 +1,13 @@
 {
-    "contacts": [
+  "creds":[
+    {
+      "username": "admin@123",
+      "pass": "system123@!@#"
+    }
+    
+  ],  
+  
+  "contacts": [
         {
             "email": "testmail@mail.com",
             "text": "test1",

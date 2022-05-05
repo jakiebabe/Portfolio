@@ -22,7 +22,7 @@ const routes: Routes = [
     children: [
       {
         path: 'overview',
-        component: OverviewComponent    
+        component: OverviewComponent
       }, {
         path: 'work-education',
         component: WorkEducationComponent
@@ -55,11 +55,14 @@ const routes: Routes = [
   },
   {
     path: 'settings',
-    component: SettingsComponent
-    // canActivate: [AuthGuard]
+    component: SettingsComponent,
+    canActivate: [AuthGuard]
   },
-  { path: '**', pathMatch: 'full', 
-        component: PagenotfoundComponent },
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: PagenotfoundComponent
+  }
 ]
 
 @NgModule({
